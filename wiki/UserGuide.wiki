@@ -3,16 +3,15 @@
 
 = Introduction =
 
+This plugin aims to render as PDF or HTML reports built on JasperReport or IReport.
+
 == Why this plugin? ==
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+  *  Legacy reports are more likely to expect simple parameters and use big/complex SQL queries.
+  *  Most developers prefer build reports using IReport IDE and SQL Queries. Even more when we are talking about subreports.
+  *  Refactor reports built on "parameters -> report" approach to "model -> report" is hard taks. Again, even more when we are talking about subreports.
 
 = Instalation =
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+As always: 
+{{{install-plugin jasper-response}}}
