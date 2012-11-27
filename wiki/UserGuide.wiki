@@ -30,17 +30,41 @@ After install the plugin and its dependencies, let's do the following...
 It's a simple report that waits for one parameter (*_"name"_*).<br>
 <img src="https://lh3.googleusercontent.com/-Rv5UDWK9-ms/T9PmLrNtcfI/AAAAAAAAAQY/xMkwlJTWV1E/s640/step01.jpg"/>
 
+<br>
 == 2. Build the "BeeController" and the "report" action ==
-<img src="https://lh3.googleusercontent.com/-Dg_8MLyD2Ow/UKU6S0rOXOI/AAAAAAAAASQ/mKhHMotjtgY/s521/controller.png"/>
+<img src="https://lh3.googleusercontent.com/-Dg_8MLyD2Ow/UKU6S0rOXOI/AAAAAAAAASQ/mKhHMotjtgY/s521/controller.png"/><br>
+*Important:* The above example take *params* to render the report, but any other Map object can be used.
 
+
+<br>
 == 3. Build the "index.gsp" on "views/bee" folder ==
 We could use GSP or HTML tags. The important is reach *report()* method at *BeeController*.<br>
-<img src="https://lh4.googleusercontent.com/-Bg76VUZ9Cko/UKU6VDYmPTI/AAAAAAAAASQ/0oBXO5PnMX8/s425/form.png"/>
+<img src="https://lh4.googleusercontent.com/-Bg76VUZ9Cko/UKU6VDYmPTI/AAAAAAAAASQ/0oBXO5PnMX8/s425/form.png"/><br>
 See that we have a *name* parameter sent to controller. Why *name*? Because *name* is the expected parameter in JasperReport file.
 
-== 4. Run the application, and test ==
+<br>
+== 4. Place the .jasper file into right place ==
+Place the *".jasper"* file into */view/bee/* folder. If the called method is *report()*, so file name must be *report.jasper*. <br>
+_Yes, following Grails conventions!_. If you need a custom name, no panic: Take a look at *Custom Configuration*.
+
+<br>
+== 5. Run the application, and test ==
 Access _http://host:port/context/bee/_ <br>
 <img src="https://lh3.googleusercontent.com/-tcpKENWJvZA/T9PmMSzu_iI/AAAAAAAAAQM/ZeQg8oUOC6I/s562/step04.jpg"/>
 
+<br>
+
 Fill and submit the form <br>
 <img src="https://lh5.googleusercontent.com/-Ckk9CxA3z5E/T9PmMxvmlXI/AAAAAAAAAP4/PuW27DUwc5k/s640/step05.png"/>
+<br>
+*DONE! That's our PDF!*
+
+= ---------------------------------------- =
+= Custom Configurations =
+The final step is always _render <Map object> as Jasper_. *The used Map must contain the required parameters in Jasper file*, but if you add some _specific parameters_, can customize the response. These parameters are:
+|| *Paramater* || *Default Value* || *Description* ||
+|| jasperForceDownload || -10 || 25 ||
+|| jasperDownloadName || -15 || 30 ||
+|| 1920 || -10 || 32 ||
+|| 1930 || _N/A_ || _N/A_ ||
+|| 1940 || -2 || 40 ||
