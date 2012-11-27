@@ -12,7 +12,7 @@ This plugin aims to render as PDF or HTML reports built on JasperReport (or IRep
   *  Refactor reports built on "parameters -> report" approach to "model -> report" is hard taks. Again, even more when we are talking about subreports.
 
 = ---------------------------------------- =
-= Instalation =
+= Installation =
 
 As always: <br>
 {{{install-plugin jasper-response}}}
