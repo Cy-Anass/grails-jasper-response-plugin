@@ -11,11 +11,36 @@ This plugin aims to render as PDF or HTML reports built on JasperReport (or IRep
   *  Most developers prefer build reports using IReport IDE and SQL Queries. Even more when we are talking about subreports.
   *  Refactor reports built on "parameters -> report" approach to "model -> report" is hard taks. Again, even more when we are talking about subreports.
 
+= ---------------------------------------- =
 = Instalation =
 
 As always: 
 {{{install-plugin jasper-response}}}
 
 Or:
-  # Download the .zip
+  # [http://code.google.com/p/grails-jasper-response-plugin/downloads/list Download] the .zip
   # {{{install-plugin /path_to_your_jar/grails-jasper-response-x.zip}}}
+
+= ---------------------------------------- =
+= Usage Example =
+
+After install the plugin and its dependencies, let's do the following...
+
+== 1. Build a JaperReport using IReport ==
+It's a simple report that waits for one parameter (*_"name"_*).
+<img src="https://lh3.googleusercontent.com/-Rv5UDWK9-ms/T9PmLrNtcfI/AAAAAAAAAQY/xMkwlJTWV1E/s640/step01.jpg"/>
+
+== 2. Build the "BeeController" and the "report" action ==
+<img src="https://lh3.googleusercontent.com/-Dg_8MLyD2Ow/UKU6S0rOXOI/AAAAAAAAASQ/mKhHMotjtgY/s521/controller.png"/>
+
+== 3. Build the "index.gsp" on "views/bee" folder ==
+We could use GSP or HTML tags. The important is reach *report()* method at *BeeController*.
+<img src="https://lh4.googleusercontent.com/-Bg76VUZ9Cko/UKU6VDYmPTI/AAAAAAAAASQ/0oBXO5PnMX8/s425/form.png"/>
+See that we have a *name* parameter sent to controller. Why *name*? Because *name* is the expected parameter in JasperReport file.
+
+== 4. Run the application, and test ==
+Access _http://<host>:<port>/context/bee/_ 
+<img src="https://lh3.googleusercontent.com/-tcpKENWJvZA/T9PmMSzu_iI/AAAAAAAAAQM/ZeQg8oUOC6I/s562/step04.jpg"/>
+
+Fill and submit the form
+<img src="https://lh5.googleusercontent.com/-Ckk9CxA3z5E/T9PmMxvmlXI/AAAAAAAAAP4/PuW27DUwc5k/s640/step05.png"/>
