@@ -39,7 +39,7 @@ We could use GSP or HTML tags. The important is reach *report()* method at *BeeC
 See that we have a *name* parameter sent to controller. Why *name*? Because *name* is the expected parameter in JasperReport file.
 
 == 4. Run the application, and test ==
-Access _http://<host>:<port>/context/bee/_ 
+Access _http://host:port/context/bee/_ 
 <img src="https://lh3.googleusercontent.com/-tcpKENWJvZA/T9PmMSzu_iI/AAAAAAAAAQM/ZeQg8oUOC6I/s562/step04.jpg"/>
 
 Fill and submit the form
