@@ -64,6 +64,6 @@ Fill and submit the form <br>
 The final step is always _render <Map object> as Jasper_. *The used Map must contain the required parameters in Jasper file*, but if you add some _specific parameters_, it's possible to customize the response. These parameters are:
 || *Paramater* || *Default Value* || *Description* ||
 || jasperForceDownload || *false* || Force (*true*) or not (*false*) the report download ||
-|| jasperDownloadName || _Same of invoked method at Controller_ || 30 ||
+|| jasperDownloadName || _Same of invoked method at Controller_ || File name of generated report. _Don't use extension!_ ||
 || jasperSourceName || _Same of invoked method at Controller_ || _N/A_ ||
 || jasperRenderType || _pdf_ || Choose between *pdf* and *html* ||
