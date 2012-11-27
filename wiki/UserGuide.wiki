@@ -57,14 +57,13 @@ Access _http://host:port/context/bee/_ <br>
 Fill and submit the form <br>
 <img src="https://lh5.googleusercontent.com/-Ckk9CxA3z5E/T9PmMxvmlXI/AAAAAAAAAP4/PuW27DUwc5k/s640/step05.png"/>
 <br>
-*DONE! That's our PDF!*
+*DONE! That's our PDF!* The file name is *report.pdf*. If you need a custom name, no panic: Take a look at *Custom Configuration*.
 
 = ---------------------------------------- =
 = Custom Configurations =
-The final step is always _render <Map object> as Jasper_. *The used Map must contain the required parameters in Jasper file*, but if you add some _specific parameters_, can customize the response. These parameters are:
+The final step is always _render <Map object> as Jasper_. *The used Map must contain the required parameters in Jasper file*, but if you add some _specific parameters_, it's possible to customize the response. These parameters are:
 || *Paramater* || *Default Value* || *Description* ||
-|| jasperForceDownload || -10 || 25 ||
-|| jasperDownloadName || -15 || 30 ||
-|| 1920 || -10 || 32 ||
-|| 1930 || _N/A_ || _N/A_ ||
-|| 1940 || -2 || 40 ||
+|| jasperForceDownload || *false* || Force (*true*) or not (*false*) the report download ||
+|| jasperDownloadName || _Same of invoked method from Controller_ || 30 ||
+|| jasperSourceName || _Same of invoked method from Controller_ || _N/A_ ||
+|| jasperRenderType || _pdf_ || Choose between *pdf* and *html* ||
