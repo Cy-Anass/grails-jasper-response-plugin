@@ -26,7 +26,7 @@ Or:
 = ---------------------------------------- =
 = Usage Example =
 
-After install the plugin and its dependencies, let's do the following...
+After install the plugin and a compatible JasperReport library, let's do the following...
 
 == 1. Build a JaperReport using IReport ==
 It's a simple report that waits for one parameter (*_"name"_*).<br>
