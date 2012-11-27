@@ -3,7 +3,7 @@
 
 = Introduction =
 
-This plugin aims to render as PDF or HTML reports built on JasperReport or IReport.
+This plugin aims to render as PDF or HTML reports built on JasperReport (or IReport) in a very simple way.
 
 == Why this plugin? ==
 
@@ -15,3 +15,7 @@ This plugin aims to render as PDF or HTML reports built on JasperReport or IRepo
 
 As always: 
 {{{install-plugin jasper-response}}}
+
+Or:
+  # Download the .zip
+  # {{{install-plugin /path_to_your_jar/grails-jasper-response-x.zip}}}
