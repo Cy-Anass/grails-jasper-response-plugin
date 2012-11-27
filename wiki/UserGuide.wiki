@@ -21,6 +21,8 @@ Or:
   # [http://code.google.com/p/grails-jasper-response-plugin/downloads/list Download] the .zip
   # {{{install-plugin /path_to_your_jar/grails-jasper-response-x.zip}}}
 
+*Important:* This plugin does not bring JasperReport library along with it. As of JasperReport *3.6.0* is compatible.
+
 = ---------------------------------------- =
 = Usage Example =
 
