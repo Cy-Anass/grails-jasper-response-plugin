@@ -24,16 +24,15 @@ grails.project.dependency.resolution = {
     }
     dependencies {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes eg.
-
-//    	runtime 'net.sf.jasperreports:jasperreports:4.0.0'
-//    	compile 'net.sf.jasperreports:jasperreports:3.6.0'
-//    	test 'net.sf.jasperreports:jasperreports:4.0.0'
     }
 
     plugins {
-        /*build(":tomcat:$grailsVersion",
+        build(":tomcat:$grailsVersion",
               ":release:1.0.0") {
             export = false
-        }*/
+        }
+        build(':release:2.0.4', ':rest-client-builder:1.0.2') {
+		   export = false
+		}
     }
 }
