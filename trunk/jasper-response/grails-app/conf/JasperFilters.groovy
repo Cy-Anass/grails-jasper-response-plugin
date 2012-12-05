@@ -8,7 +8,7 @@ class JasperFilters {
 	def filters = {
 		all(controller: '*', action: '*') {
 			before = {
-				request.setAttribute("jasperJdbcConnection",dataSource.getConnection())
+				request.setAttribute("jasperJdbcConnection",dataSource?.connection)
 				return true
 			}
 		}

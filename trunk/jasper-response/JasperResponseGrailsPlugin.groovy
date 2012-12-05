@@ -1,6 +1,6 @@
 class JasperResponseGrailsPlugin {
 
-	def version = "0.0.9"
+	def version = "0.9"
     
     def grailsVersion = "2.0 > *"
     
@@ -29,7 +29,10 @@ Easy way to render JasperReports as PDF or HTML in Grails Projects.
 
     def doWithApplicationContext = { applicationContext ->
 		String rootPath = applicationContext.getServletContext().getRealPath("/")
-		rootPath = rootPath.substring(0,rootPath.indexOf("web-app"))
+		grails.plugin.jyoshiriro.jasperResponse.renderers.Jasper.setON_AS(rootPath.indexOf("web-app")<0)
+		if (!grails.plugin.jyoshiriro.jasperResponse.renderers.Jasper.isON_AS()) {
+			rootPath = rootPath[0..rootPath.indexOf("web-app")-1]
+		}
 		grails.plugin.jyoshiriro.jasperResponse.renderers.Jasper.setWEBAPPROOTPATH(rootPath)
     }
 

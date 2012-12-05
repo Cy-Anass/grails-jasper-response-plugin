@@ -1,4 +1,4 @@
-<plugin name='jasper-response' version='0.0.9' grailsVersion='2.0 &gt; *'>
+<plugin name='jasper-response' version='0.9' grailsVersion='2.0 &gt; *'>
   <author>José Yoshiriro</author>
   <authorEmail>jyoshiriro@gmail.com</authorEmail>
   <title>Jasper Response Plugin</title>
