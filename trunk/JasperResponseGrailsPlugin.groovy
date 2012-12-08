@@ -1,6 +1,6 @@
 class JasperResponseGrailsPlugin {
 
-	def version = "0.9"
+	def version = "1.0"
     
     def grailsVersion = "2.0 > *"
     
