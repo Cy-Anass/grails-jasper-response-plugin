@@ -25,7 +25,7 @@ Easy way to render JasperReports as PDF or HTML in Grails Projects.
 
     def issueManagement = [ system: "Google Code", url: "http://code.google.com/p/grails-jasper-response-plugin/issues/list" ]
 
-    def scm = [ url: "http://code.google.com/p/grails-jasper-response-plugin/source/browse/" ]
+    def scm = [ url: "https://grails-jasper-response-plugin.googlecode.com/svn/" ]
 
     def doWithApplicationContext = { applicationContext ->
 		String rootPath = applicationContext.getServletContext().getRealPath("/")
