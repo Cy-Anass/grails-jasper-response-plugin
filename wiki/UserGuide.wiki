@@ -74,7 +74,7 @@ The final step is always _render <Map object> as Jasper_. *The used Map must con
 ==About ".jasper" file location==
 
 *If the ".jasper" file is into a folder at "view" folder*<br>
-The "jasperSourceName" parameter need starts with "../".
+The "jasperSourceName" parameter need starts with *"../"*.
 {{{
 params.jasperSourceName='../anotherController/anotherReport' 
 }}}
@@ -82,7 +82,7 @@ so the jasper-response-plugin would search _"view/anotherController/anotherRepor
 
 <br>
 *If the ".jasper" file is into a folder at "web-app" folder*<br>
-The "jasperSourceName" parameter need starts with "/".
+The "jasperSourceName" parameter need starts with *"/"*.
 {{{
 params.jasperSourceName='/myCustomReportsFolder/myGeneralReport' 
 }}}
