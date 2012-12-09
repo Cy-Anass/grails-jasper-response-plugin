@@ -68,5 +68,9 @@ The final step is always _render <Map object> as Jasper_. *The used Map must con
 || jasperRenderType || _pdf_ || Choose between *pdf* and *html* ||
 || jasperForceDownload || *false* || Force (*true*) or not (*false*) the report download ||
 || jasperDownloadName || _Same of invoked method at Controller_ || File name of generated report. _Don't use extension!_ ||
-|| jasperSourceName || _Same of invoked method at Controller_ || ".jasper" file name, if you don't want or can't use Grails conventions. _Don't use extension!_ 
-*Example 1:* _If the ".jasper" file is into a folder at "view" folder_||
+|| jasperSourceName || _Same of invoked method at Controller_ || ".jasper" file name, if you don't want or can't use Grails conventions. _Don't use extension!_||
+
+<br>
+==About ".jasper" file location==
+
+*Example 1:* _If the ".jasper" file is into a folder at "view" folder_
