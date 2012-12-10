@@ -9,7 +9,7 @@ This plugin aims to render as PDF or HTML reports built on JasperReport (or IRep
 
   *  Legacy reports are more likely to expect simple parameters and use big/complex SQL queries.
   *  Most developers prefer build reports using IReport IDE and SQL Queries. Even more when we are talking about subreports.
-  *  Refactor reports built on "parameters -> report" approach to "model -> report" is hard taks. Again, even more when we are talking about subreports.
+  *  Refactor reports built on "parameters -> report" approach to "model -> report" is a hard task. Again, even more when we are talking about subreports.
 
 = ---------------------------------------- =
 = Installation =
