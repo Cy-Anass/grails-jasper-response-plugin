@@ -47,7 +47,7 @@ See that we have a *name* parameter sent to controller. Why *name*? Because *nam
 <br>
 == 4. Place the .jasper file into right place ==
 Place the *".jasper"* file into */view/bee/* folder. If the called method is *report()*, so file name must be *report.jasper*. <br>
-_Yes, following Grails conventions!_.<br>If you need a custom name, no panic: Take a look at *Custom Configuration*.
+_Yes, following Grails conventions!_.<br>If you prefer/need a custom name, no panic: Take a look at *Custom Configuration*.
 
 <br>
 == 5. Run the application, and test ==
