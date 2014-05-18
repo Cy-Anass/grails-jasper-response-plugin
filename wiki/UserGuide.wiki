@@ -17,6 +17,11 @@ This plugin aims to render as PDF or HTML reports built on JasperReport (or IRep
 As always: <br>
 {{{install-plugin jasper-response}}}
 
+or 
+
+{{{compile ":jasper-response:1.0.1"}}}
+at *BuildConfig.groovy*
+
 Or:
   # [http://code.google.com/p/grails-jasper-response-plugin/downloads/list Download] the .zip
   # {{{install-plugin /path_to_your_jar/grails-jasper-response-x.zip}}}
